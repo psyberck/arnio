@@ -415,6 +415,15 @@ print(list(signatures["drop_nulls"].parameters))  # ["subset"]
 print(list(signatures["filter_rows"].parameters))  # ["column", "op", "value"]
 ```
 
+Need to restore the registry back to built-in steps only during tests?
+
+```python
+ar.reset_steps()
+
+print(ar.list_steps())
+# Only built-in steps remain
+```
+
 Custom steps run through a pandas↔ArFrame conversion bridge. Prototype in Python, then optionally migrate hot paths to C++ for full speed.
 </details>
 
