@@ -88,6 +88,7 @@ class CsvConfig:
     nrows: int | None
     skip_rows: int | None
     sample_size: int | None
+    dtype: dict[str, str] | None
 
     def __init__(self, **kwargs: Any) -> None: ...
 
