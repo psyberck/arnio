@@ -15,4 +15,3 @@ python -m mypy arnio --show-error-codes
 ```
 
 If mypy reports mismatches, adjust the stub or the Python call site.
-
